@@ -1,6 +1,7 @@
 # python_DSA_notes
 Common data structure and algorithm in python
 
+
 **BFS recursive traversal in a binary tree**
 
     class BinaryTree:
