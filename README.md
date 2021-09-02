@@ -2,7 +2,7 @@
 Common data structure and algorithm in python
 
 
-**BFS recursive traversal in a binary tree**
+**DFS recursive traversal in a binary tree**
 
     class BinaryTree:
         def __init__(self, value):
@@ -13,8 +13,17 @@ Common data structure and algorithm in python
     def bfs(node):
       if node is None:
         return
+        
+      if node.left is None and node.right is None:
+		# do something
 
       print(node.value)
       bfs(currNode.left)
       bfs(currNode.right)
 
+Print in-order
+    def printInorder(root):
+        if root:
+            printInorder(root.left)
+            print(root.val),
+            printInorder(root.right)
