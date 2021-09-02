@@ -22,6 +22,8 @@ Common data structure and algorithm in python
       bfs(currNode.right)
 
 Print in-order
+<br/>
+
     def printInorder(root):
         if root:
             printInorder(root.left)
