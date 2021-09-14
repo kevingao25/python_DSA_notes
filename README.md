@@ -52,3 +52,18 @@ Print in-order
 			return binarySearchHelper(array, target, left, middle - 1)
 		else:
 			return binarySearchHelper(array, target, middle + 1, right)
+			
+**Binary Search (iterative)**
+
+	def binarySearchHelper(array, target, left, right):
+	while left <= right:
+		middle = (left + right) // 2
+		if target == array[middle]:
+			return middle
+		elif target < array[middle]:
+			right = middle - 1
+		else:
+			left = middle + 1
+	return -1
+	
+
