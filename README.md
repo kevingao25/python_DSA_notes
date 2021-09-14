@@ -39,3 +39,15 @@ Print in-order
 			array[start], array[end] = array[end], array[start]
 			start += 1
 			end -= 1
+			
+**Binary Search (recursive)**
+	def binarySearchHelper(array, target, left, right):
+		if left > right:
+			return -1
+		middle = (left + right) // 2
+		if target == array[middle]:
+			return middle
+		elif target < array[middle]:
+			return binarySearchHelper(array, target, left, middle - 1)
+		else:
+			return binarySearchHelper(array, target, middle + 1, right)
