@@ -65,5 +65,14 @@ Print in-order
 			else:
 				left = middle + 1
 		return -1
+		
+**Shift array and update one item**
+
+	def shiftAndUpdate(array, num, idx):
+		for i in range(idx + 1):
+			if i == idx:
+				array[i] = num
+			else: 
+				array[i] = array[i + 1]
 	
 
