@@ -41,6 +41,7 @@ Print in-order
 			end -= 1
 			
 **Binary Search (recursive)**
+
 	def binarySearchHelper(array, target, left, right):
 		if left > right:
 			return -1
