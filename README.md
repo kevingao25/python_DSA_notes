@@ -75,4 +75,41 @@ Print in-order
 			else: 
 				array[i] = array[i + 1]
 	
+**Bubble Sort**
+```
+"""
+Traverse from right to left for each iteration, and left bound increments to the right
+O(n^2) time | O(1) space
+"""
+
+def bubbleSort(array):
+	for i in range(len(array)):
+		swapped = False
+		for j in range(len(array)-1 , i, -1):
+			if array[j] < array[j-1]:
+				array[j], array[j-1] = array[j-1], array[j]	
+				swapped = True			
+		if swapped == False:
+			break	
+	return array
+```
+
+```
+"""
+Iterate from left to right 
+Use while loop instead of double for loops
+"""
+
+def bubbleSort(array):
+	isSorted = False
+	counter = 0
+	while not isSorted:
+		isSorted = True
+		for i in range(len(array) - 1 - counter):
+			if array[i] > array[i + 1]:
+				array[i], array[i+1] = array[i+1], array[i]
+				isSorted = False
+    	counter += 1
+	return array
+```
 
