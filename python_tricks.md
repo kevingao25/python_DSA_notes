@@ -9,3 +9,8 @@ negative_infinity = float('-inf')
 **Reverse Iteration**
 
 	for i in reversed(range(len(string))):
+	
+**Join chars to string**
+
+	stringChars = ["a", "b", "c"]
+	string = "".join(stringChars)
