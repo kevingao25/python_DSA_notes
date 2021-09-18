@@ -16,5 +16,6 @@ negative_infinity = float('-inf')
 	string = "".join(stringChars)
 
 **Python dictionary**
+
 	dict[key] = dict.get(key, 0) + 1
 
