@@ -128,6 +128,24 @@ def bubbleSort(array):
 	def isPalindrome(string, i = 0):
 		j = len(string) - 1 - i
 		return True if i >= j else string[i] == string[j] and isPalindrome(string, i + 1)
+		
+		
+**First non-repeating character in string (dict)**
+
+	def firstNonRepeatingCharacter(string):
+		charFreq = {}
+		for char in string:
+			charFreq[char] = charFreq.get(char, 0) + 1
+
+		for i in range(len(string)):
+			char = string[i]
+			if charFreq[char] == 1:
+				return i
+		return -1
+		
+		
+		
+
 	
 
 
