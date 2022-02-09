@@ -18,4 +18,7 @@ negative_infinity = float('-inf')
 **Python dictionary**
 
 	dict[key] = dict.get(key, 0) + 1
+	
+**Deconstructing in Python: **
+https://blog.teclado.com/destructuring-in-python/
 
