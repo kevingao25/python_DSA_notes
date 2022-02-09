@@ -22,4 +22,8 @@ negative_infinity = float('-inf')
 **Deconstructing in Python:**
 
  https://blog.teclado.com/destructuring-in-python/
+ 
+**Understanding Python Reference**
+
+https://levelup.gitconnected.com/understanding-reference-and-copy-in-python-c681341a0cd8
 
